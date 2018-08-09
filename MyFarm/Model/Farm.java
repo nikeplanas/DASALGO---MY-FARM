@@ -121,39 +121,4 @@ public class Farm  {
         }
         return true;
     }
-    
-    //BASED ON UML
-
-	public boolean ifPlantable (Tile t, Seed s) {
-		if (t.isPlowed )
-			return true;
-		else
-			return false;
-	}
-
-	public ArrayList<Tile> getField () {
-		return field;
-	}
-
-	public Tile getTile (int tilenum) {
-		return field.get(tilenum);
-	}
-
-	//gets the list of items to the inventory
-	public ArrayList<Item> getTools () {
-		return tools;
-	}
-
-	public Item getItem (int index) {
-		switch(index) {
-			case 1:
-				return inventory.get(index); break;
-			case 2:
-				return inventory.get(index); break;
-			case 3:
-				return inventory.get(index); break;
-			case 4:
-				return inventory.get(index); break;
-		}
-	}
 }
