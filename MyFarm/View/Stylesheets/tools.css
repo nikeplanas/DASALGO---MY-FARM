@@ -1,0 +1,208 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat no-repeat;
+    overflow:initial;
+    -fx-background-size: 95%;
+    -fx-background-position: 50% 50%;
+}
+
+.button:pressed {
+    -fx-effect: dropshadow( three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);
+}
+
+.button:hover {
+    -fx-effect: dropshadow( three-pass-box, #FFE876, 5, 0.0, 0, 1);
+}
+
+#bWateringCan.button {
+    -fx-background-image: url(../Images/wateringCan.png);
+}
+
+#bWateringCan.button:hover {
+    -fx-background-image: url(../Images/wateringCanHover.png);
+}
+
+#bWateringCan.button:focused {
+    -fx-background-image: url(../Images/wateringCanHover.png);
+}
+
+#bPlow.button {
+    -fx-background-image: url(../Images/plow.png);
+}
+
+#bPlow.button:hover {
+    -fx-background-image: url(../Images/plowHover.png);
+}
+
+#bPlow.button:focused {
+    -fx-background-image: url(../Images/plowHover.png);
+}
+
+#bPickaxe.button {
+    -fx-background-image: url(../Images/pickaxe.png);
+}
+
+#bPickaxe.button:hover {
+    -fx-background-image: url(../Images/pickaxeHover.png);
+}
+
+#bPickaxe.button:focused {
+    -fx-background-image: url(../Images/pickaxeHover.png);
+}
+
+#bFertilizer.button {
+    -fx-background-image: url(../Images/fertilizer.png);
+}
+
+#bFertilizer.button:hover {
+    -fx-background-image: url(../Images/fertilizerHover.png);
+}
+
+#bFertilizer.button:focused {
+    -fx-background-image: url(../Images/fertilizerHover.png);
+}
+
+#turnipB.button {
+    -fx-background-image: url(../Images/turnip.png);
+}
+
+#turnipB.button:hover {
+    -fx-background-image: url(../Images/turnipHover.png);
+}
+
+#turnipB.button:focused {
+    -fx-background-image: url(../Images/turnipHover.png);
+}
+
+
+#carrotB.button {
+    -fx-background-image: url(../Images/carrot.png);
+}
+
+#carrotB.button:hover {
+    -fx-background-image: url(../Images/carrotHover.png);
+}
+
+#carrotB.button:focused {
+    -fx-background-image: url(../Images/carrotHover.png);
+}
+
+#tomatoB.button {
+    -fx-background-image: url(../Images/tomato.png);
+}
+
+#tomatoB.button:hover {
+    -fx-background-image: url(../Images/tomatoHover.png);
+}
+
+#tomatoB.button:focused {
+    -fx-background-image: url(../Images/tomatoHover.png);
+}
+
+#potatoB.button {
+    -fx-background-image: url(../Images/potato.png);
+}
+
+#potatoB.button:hover {
+    -fx-background-image: url(../Images/potatoHover.png);
+}
+
+#potatoB.button:focused {
+    -fx-background-image: url(../Images/potatoHover.png);
+}
+
+#roseB.button {
+    -fx-background-image: url(../Images/rose.png);
+}
+
+#roseB.button:hover {
+    -fx-background-image: url(../Images/roseHover.png);
+}
+
+#roseB.button:focused {
+    -fx-background-image: url(../Images/roseHover.png);
+}
+
+#tulipB.button {
+    -fx-background-image: url(../Images/tulip.png);
+}
+
+#tulipB.button:hover {
+    -fx-background-image: url(../Images/tulipHover.png);
+}
+
+#tulipB.button:focused {
+    -fx-background-image: url(../Images/tulipHover.png);
+}
+
+#stargazerB.button {
+    -fx-background-image: url(../Images/stargazer.png);
+}
+
+#stargazerB.button:hover {
+    -fx-background-image: url(../Images/stargazerHover.png);
+}
+
+#stargazerB.button:focused {
+    -fx-background-image: url(../Images/stargazerHover.png);
+}
+
+#sunflowerB.button {
+    -fx-background-image: url(../Images/sunflower.png);
+}
+
+#sunflowerB.button:hover {
+    -fx-background-image: url(../Images/sunflowerHover.png);
+}
+
+#sunflowerB.button:focused {
+    -fx-background-image: url(../Images/sunflowerHover.png);
+}
+
+#mangoB.button {
+    -fx-background-image: url(../Images/mango.png);
+}
+
+#mangoB.button:hover {
+    -fx-background-image: url(../Images/mangoHover.png);
+}
+
+#mangoB.button:focused {
+    -fx-background-image: url(../Images/mangoHover.png);
+}
+
+#appleB.button {
+    -fx-background-image: url(../Images/apple.png);
+}
+
+#appleB.button:hover {
+    -fx-background-image: url(../Images/appleHover.png);
+}
+
+#appleB.button:focused {
+    -fx-background-image: url(../Images/appleHover.png);
+}
+
+#bananaB.button {
+    -fx-background-image: url(../Images/banana.png);
+}
+
+#bananaB.button:hover {
+    -fx-background-image: url(../Images/bananaHover.png);
+}
+
+#bananaB.button:focused {
+    -fx-background-image: url(../Images/bananaHover.png);
+}
+
+#orangeB.button {
+    -fx-background-image: url(../Images/orange.png);
+}
+
+#orangeB.button:hover {
+    -fx-background-image: url(../Images/orangeHover.png);
+}
+
+#orangeB.button:focused {
+    -fx-background-image: url(../Images/orangeHover.png);
+}

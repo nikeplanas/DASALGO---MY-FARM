@@ -1,0 +1,19 @@
+.button {
+    -fx-background-image: url(../Images/plowed.png);
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat no-repeat;
+    overflow:initial;
+    -fx-background-position: 50% 100%;
+}
+
+.button:hover {
+    -fx-effect: dropshadow( three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);
+}
+
+.button:focused {
+    -fx-effect: dropshadow( three-pass-box, #FFE876, 5, 0.0, 0, 1);
+}
+
+.button:pressed {
+    -fx-effect: dropshadow( three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);
+}
