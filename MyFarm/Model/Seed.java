@@ -160,7 +160,9 @@ public abstract class Seed extends Item {
 
     public void plant (Tile t) {
 
+        t.setSeed;
     }
+    
     /*
     public String toString () {
         String s;
