@@ -1,4 +1,5 @@
 package MyFarm.Model;
+import.java.util.Random;
 
 public abstract class Seed extends Item {
     private String name;
@@ -163,17 +164,19 @@ public abstract class Seed extends Item {
         t.setSeed;
     }
     
-    /*
-    public String toString () {
-        String s;
-        return s;
-    }
-
     public int convertPPtoRandomIntInRange () {
-        int r;
-
-        return r;
+        Random rand = new Random();
+        if (productsProduced.contains("-")) {
+            String[] s = productsProduced.split("[ -]", 2);
+            System.out.println(s[0]);
+            System.out.println(s[1]);
+            int min = Integer.parseInt(s[0].trim()), max = Integer.parseInt(s[1].trim());
+            return rand.nextInt(max - min + 1) + min;
+        }
+        return Integer.parseInt(productsProduced.trim());
     }
+    
+    /*
 
     public double computeSP (Tile t) {
         double sp;
