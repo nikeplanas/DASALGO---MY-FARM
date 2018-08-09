@@ -31,7 +31,7 @@ public class Tile {
         obstructed = true;
     }
 
-    public void plant(Seed seed) {
+    public void setSeed(Seed seed) {
         this.seed = seed;
     }
 
