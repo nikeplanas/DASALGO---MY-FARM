@@ -8,6 +8,13 @@ public class Pickaxe extends Item {
     }
 
     public void breakRock (Tile t) {
+        
+       if (t.getHasRock() == true)
+		{
+			t.setHasRock = false;
+		}
 
+		else
+			System.out.println ("No rock");
     }
 }
