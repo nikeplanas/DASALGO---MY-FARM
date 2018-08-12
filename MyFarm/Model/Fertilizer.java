@@ -16,15 +16,12 @@ public class Fertilizer extends Item {
         amount++;
     }
     
-    public void fertilizeTile (Tile t) {
-        
-        if (t.getIsSelected() == true && t.getHasPlant() == false)
-		{
-			t.setFertilizeTile(t.getFertilizeTile());
-		}
+    public boolean fertilizeTile (Tile t) {
 
-		else
-			system.out.println ("Cannot be fertilized");
-	}
+        if (t.getSeed() == null) {
+            t.addFertilizer();
+            return true;
+        }
+        return false; 
     }
 }
