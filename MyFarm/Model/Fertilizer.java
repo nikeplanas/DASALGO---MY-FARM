@@ -16,12 +16,10 @@ public class Fertilizer extends Item {
         amount++;
     }
     
-    public boolean fertilizeTile (Tile t) {
-
+    public void fertilizeTile (Tile t) {
         if (t.getSeed() == null) {
             t.addFertilizer();
-            return true;
+            amount--;
         }
-        return false; 
     }
 }
