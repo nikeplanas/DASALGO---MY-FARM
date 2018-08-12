@@ -1,6 +1,5 @@
 package MyFarm.Controller;
 
-import MyFarm.Model.Farm;
 import MyFarm.Model.Farmer;
 import MyFarm.Model.Fertilizer;
 import javafx.fxml.FXML;
@@ -21,76 +20,54 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainGameController {
+
+    @FXML
     public ImageView descBackground;
-    public Label descName;
+    @FXML
     public GridPane descBox;
-    public Label itemDescription;
+
+    @FXML
     public ProgressBar xpBar;
-    public Label xpLabel;
-    public Label moneyBonus;
-    public Label ht;
-    public Label wfBonus;
-    public Label uRankStat;
-    public Label uMoneyBonus;
-    public Label uWfBonus;
-    public Label uHt;
-    public AnchorPane upgradePane;
-    public Button itemButton;
-    public Button buyB;
-    public Button exitInventory;
+    @FXML
+    public Label itemDescription, xpLabel, moneyBonus,
+            ht, wfBonus, uRankStat, descName,
+            uMoneyBonus, uWfBonus, uHt;
 
-
-    private Farmer farmer;
-    private Farm farm;
-
+    @FXML
     public VBox defaultButtons;
-    public AnchorPane seedMenu;
-    public AnchorPane settingsMenu;
-    public AnchorPane statsMenu;
+    @FXML
+    public AnchorPane seedMenu, settingsMenu, statsMenu, upgradePane;
 
-    public Label name;
-    public Label coins;
-    public Label farmerLevel;
-    public Label farmerType;
+    @FXML
+    public Label name, coins, farmerLevel, farmerType;
 
-    public Button bWateringCan;
-    public Button bPlow;
-    public Button bPickaxe;
-    public Button bFertilizer;
-
-    public Button turnipB;
-    public Button carrotB;
-    public Button tomatoB;
-    public Button potatoB;
-
-    public Button roseB;
-    public Button tulipB;
-    public Button stargazerB;
-    public Button sunflowerB;
-
-    public Button mangoB;
-    public Button appleB;
-    public Button bananaB;
-    public Button orangeB;
-
-
+    @FXML
+    public Button bWateringCan,  bPlow,  bPickaxe,  bFertilizer,
+            turnipB, carrotB, tomatoB, potatoB,
+            roseB, tulipB, stargazerB, sunflowerB,
+            mangoB, appleB, bananaB, orangeB,
+            itemButton, buyB, exitInventory,
+            lastUsed;
+    @FXML
+    private ArrayList<Button> tiles, seeds, tools;
+    private Farmer farmer;
     private boolean selected;
     private String toolUsed;
-    public Button lastUsed;
+    private File unplowedTile = new File("MyFarm/View/Stylesheets/unplowedTile.css");
+    private File mangoTree = new File("MyFarm/View/Stylesheets/mangoTree.css");
+    private File plowedTile = new File("MyFarm/View/Stylesheets/plowedTile.css");
 
-    @FXML
-    private ArrayList<Button> tiles;
-    @FXML
-    private ArrayList<Button> seeds;
-    @FXML
-    private ArrayList<Button> tools;
 
-    public void initialize () throws IOException {
+    public void initialize () {
+    }
 
+    public void setFarmer(String username) throws IOException {
+        farmer = new Farmer(username);
+    }
+
+    public void setAssets () {
         toolUsed = null;
         selected = false;
-        farmer = new Farmer("Shasha");
-        farm = new Farm();
         farmerType.setText(farmer.getType());
         farmerLevel.setText("Lvl 1");
         name.setText(farmer.getName());
@@ -99,11 +76,8 @@ public class MainGameController {
             b.getStylesheets().add("MyFarm/View/Stylesheets/unplowedTile.css");
         }
         xpBar.setProgress(0.0F);
+        System.out.println("DAHECK");
     }
-
-    private File unplowedTile = new File("MyFarm/View/Stylesheets/unplowedTile.css");
-    private File mangoTree = new File("MyFarm/View/Stylesheets/mangoTree.css");
-    private File plowedTile = new File("MyFarm/View/Stylesheets/plowedTile.css");
 
 
     public void change(ActionEvent e) {
