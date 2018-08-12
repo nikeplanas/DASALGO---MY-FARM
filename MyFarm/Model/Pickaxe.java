@@ -7,14 +7,9 @@ public class Pickaxe extends Item {
         this.setDescription("Used for destroying rocks obstructing tiles.");
     }
 
-    public void breakRock (Tile t) {
-        
-       if (t.getHasRock() == true)
-		{
-			t.setHasRock = false;
-		}
-
-		else
-			System.out.println ("No rock");
+    public void breakRock(Tile t) {
+        if (t.isObstructed()) {
+            t.breakRock();
+        }
     }
 }
