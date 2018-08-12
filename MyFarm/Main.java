@@ -10,14 +10,17 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("View/mainGame.fxml"));
-        Scene mainGame = new Scene(root, 960, 540);
-        primaryStage.setTitle("MyFarm");
+        gameStage = primaryStage;
+        Scene startup = new Scene(FXMLLoader.load(getClass().getResource("View/startup.fxml")), 960, 540);
+        gameStage.setScene(startup);
+        gameStage.setTitle("My Farm");
+        gameStage.setResizable(false);
+        gameStage.show();
+    }
 
-        primaryStage.setScene(mainGame);
-        primaryStage.setMinWidth(960);
-        primaryStage.setMinHeight(540);
-        primaryStage.show();
+    public void changeScene (Parent root) {
+        gameStage.setScene(new Scene(root));
+        gameStage.show();
     }
 
 
