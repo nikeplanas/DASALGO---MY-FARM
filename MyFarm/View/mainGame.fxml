@@ -15,23 +15,22 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 <?import java.util.ArrayList?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyFarm.Controller.MainGameController">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyFarm.Controller.MainGameController">
     <top>
         <GridPane gridLinesVisible="true" maxHeight="192.0" minHeight="-Infinity" prefHeight="54.0" prefWidth="960.0" BorderPane.alignment="CENTER">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="192.0" prefWidth="192.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="234.0" prefWidth="234.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="192.0" prefWidth="192.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints maxHeight="60.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4">
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
                     <children>
                         <Button layoutX="67.0" layoutY="11.0" mnemonicParsing="false" onAction="#change" text="Help" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="10.0" />
                     </children>
@@ -275,7 +274,7 @@
                      <font>
                         <Font size="11.0" />
                      </font></Button>
-                  <Button fx:id="itemButton" visible="false" onMouseClicked="#toolMode" layoutX="30.0" layoutY="176.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="169.0" />
+                  <Button fx:id="itemButton" layoutX="30.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#toolMode" prefHeight="46.0" prefWidth="169.0" visible="false" />
                </children></AnchorPane>
                 <AnchorPane fx:id="statsMenu" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="300.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="0.0">
                     <children>
