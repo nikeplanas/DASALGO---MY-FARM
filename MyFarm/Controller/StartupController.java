@@ -42,4 +42,12 @@ public class StartupController {
         else
             startButton.setDisable(true);
     }
+    
+    String musicFile = "Farmville.mp3";
+
+    public void playThemeSong () {
+    Media sound = new Media(new File(musicFile).toURI().toString());
+    MediaPlayer mediaPlayer = new MediaPlayer(sound);
+    mediaPlayer.play();
+    }
 }
