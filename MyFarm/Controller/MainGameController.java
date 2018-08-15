@@ -294,8 +294,7 @@ public class MainGameController {
             } else if (b.getText().contentEquals("Settings")) {
                 defaultButtons.setVisible(false);
                 settingsMenu.setVisible(true);
-            } else if (b.getText().equalsIgnoreCase("Exit Game"))
-                System.exit(0);
+            }
         } else {
             if (b.getParent() == seedMenu) {
                 defaultButtons.setVisible(true);
