@@ -9,7 +9,7 @@ package MyFarm.Model;
 public class Plow extends Item {
 
 	/**
-	 * This method sets name and description for Plow object
+	 * This constructor instantiates Plow
 	 */
 	public Plow () {
 		this.setName("Plow");
@@ -24,6 +24,11 @@ public class Plow extends Item {
 	public void plowTile (Tile t) {
 		t.setPlowed();
 	}
+	
+	/**
+	* This method computes for the total amount of time a crop is withered then remove the withered plant
+	* @param t is the current tile
+	*/
 	
 	public void removeWithered (Tile t) {
         	t.setCurrentTime((t.getSeed().getHarvestTimeWithBonus() * 3) + 60);
