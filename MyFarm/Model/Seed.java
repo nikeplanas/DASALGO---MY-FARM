@@ -171,49 +171,112 @@ public abstract class Seed extends Item {
         return fertilizerLimit;
     }
 
+    /** Sets the value of fertilizerLimit
+     *
+     * @param fertilizerLimit The value to be saved to fertilizerLimit
+     */
+
     public void setFertilizerLimit(int fertilizerLimit) {
         this.fertilizerLimit = fertilizerLimit;
     }
+
+    /** Gets the cost of harvesting plants under the seed types.
+     *
+     * @return The cost of harvesting a plant
+     */
 
     public int getHarvestCost() {
         return harvestCost;
     }
 
+    /** Sets the value of harvestCost
+     *
+     * @param harvestCost The value to be saved to harvestCost
+     */
+
     public void setHarvestCost(int harvestCost) {
         this.harvestCost = harvestCost;
     }
+
+    /** Gets the string containing the range of the number of products that the plant.
+     *
+     * @return String containing the range of the number of products that the plant
+     *         can produce.
+     */
 
     public String getProductsProduced() {
         return productsProduced;
     }
 
+
+    /** Sets the value of productsProduced
+     *
+     * @param productsProduced The value to be saved to productsProduced
+     */
+
     public void setProductsProduced(String productsProduced) {
         this.productsProduced = productsProduced;
     }
+
+    /** Gets the cost of buying the seed
+     *
+     * @return Double value representing the cost of buying the seed.
+     */
 
     public double getSeedCost() {
         return seedCost;
     }
 
+    /** Sets the value of seedCost
+     *
+     * @param seedCost The value to be saved to seedCost
+     */
+
     public void setSeedCost(double seedCost) {
         this.seedCost = seedCost;
     }
+
+    /** Gets the base selling price of an individual product of the plant.
+     *
+     * @return The base selling price of a product.
+     */
 
     public double getBaseSelling() {
         return baseSelling;
     }
 
+    /** Sets the value of baseSelling
+     *
+     * @param baseSelling The value to be saved to baseSelling
+     */
+
     public void setBaseSelling(double baseSelling) {
         this.baseSelling = baseSelling;
     }
+
+    /** Gets the current amount of seeds.
+     *
+     * @return Integer value representing the current amount of seeds.
+     */
 
     public int getAmount() {
         return amount;
     }
 
+    /** Sets the value of amount
+     *
+     * @param amount The value to be saved to amount
+     */
+
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
+    /** This method, based on the products produced String, generates a random
+     *  value within the range to represent the number of products produced by
+     *  an individual plant.
+     * @return A random number based on the given range of the products produced.
+     */
 
     public int convertPPtoRandomIntInRange () {
         Random rand = new Random();
@@ -227,9 +290,11 @@ public abstract class Seed extends Item {
         return Integer.parseInt(productsProduced.trim());
     }
 
+    /** This method increments the amount of seeds by one.
+     *
+     */
+
     public void addAmount() {
         amount++;
     }
-
-
 }
