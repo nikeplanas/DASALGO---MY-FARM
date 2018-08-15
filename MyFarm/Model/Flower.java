@@ -12,6 +12,6 @@ public class Flower extends Seed {
     * This constructor instantiates flower
     */
     public Flower () {
-        Super();
+        super();
     }
 }
