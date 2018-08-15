@@ -16,8 +16,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import java.util.ArrayList?>
+<?import java.util.ArrayList?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyFarm.Controller.MainGameController">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyFarm.Controller.MainGameController">
     <top>
         <GridPane gridLinesVisible="true" maxHeight="192.0" minHeight="-Infinity" prefHeight="54.0" prefWidth="960.0" BorderPane.alignment="CENTER">
             <columnConstraints>
@@ -32,7 +34,7 @@
             <children>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
                     <children>
-                        <Button layoutX="67.0" layoutY="11.0" mnemonicParsing="false" onAction="#change" text="Help" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="10.0" />
+                        <Button layoutX="67.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#clickTile" text="Help" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="10.0" />
                     </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
@@ -71,56 +73,56 @@
                     </image>
                 </ImageView>
                 <TilePane hgap="10.0" layoutX="36.0" layoutY="50.0" maxHeight="290.0" maxWidth="590.0" minHeight="290.0" minWidth="590.0" nodeOrientation="LEFT_TO_RIGHT" prefColumns="10" prefHeight="290.0" prefTileHeight="50.0" prefTileWidth="50.0" prefWidth="590.0" tileAlignment="BOTTOM_CENTER" vgap="10.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="50.0">
-                    <Button fx:id="t00" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t01" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t02" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t03" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t04" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t05" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t06" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t07" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t08" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t09" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t10" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t11" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t12" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t13" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t14" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t15" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t16" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t17" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t18" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t19" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t20" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t21" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t22" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t23" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t24" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t25" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t26" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t27" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t28" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t29" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t30" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t31" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t32" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t33" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t34" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t35" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t36" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t37" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t38" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t39" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t40" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t41" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t42" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t43" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t44" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t45" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t46" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t47" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t48" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
-                    <Button fx:id="t49" mnemonicParsing="false" onAction="#change" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t00" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t01" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t02" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t03" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t04" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t05" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t06" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t07" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t08" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t09" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t10" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t11" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t12" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t13" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t14" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t15" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t16" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t17" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t18" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t19" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t20" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t21" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t22" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t23" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t24" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t25" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t26" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t27" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t28" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t29" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t30" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t31" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t32" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t33" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t34" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t35" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t36" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t37" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t38" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t39" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t40" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t41" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t42" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t43" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t44" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t45" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t46" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t47" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t48" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
+                    <Button fx:id="t49" mnemonicParsing="false" onMouseClicked="#clickTile" prefHeight="50.0" prefWidth="85.0" />
                     <fx:define>
                         <ArrayList fx:id="tiles">
                             <fx:reference source="t00" />
@@ -270,7 +272,7 @@
                            </fx:define>
                        </children></TilePane>
                   <Button fx:id="exitInventory" alignment="CENTER" layoutX="97.0" layoutY="36.0" mnemonicParsing="false" onAction="#menuButtons" text="Hide Inventory" textAlignment="CENTER" />
-                  <Button fx:id="buyB" layoutX="205.0" layoutY="176.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="66.0" text=" " textAlignment="CENTER" visible="false" wrapText="true" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="29.0">
+                  <Button fx:id="buyB" layoutX="205.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#buy" prefHeight="45.0" prefWidth="66.0" text=" " textAlignment="CENTER" visible="false" wrapText="true" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="29.0">
                      <font>
                         <Font size="11.0" />
                      </font></Button>
@@ -278,14 +280,13 @@
                </children></AnchorPane>
                 <AnchorPane fx:id="statsMenu" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="300.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="0.0">
                     <children>
-
                     <ImageView fitHeight="488.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <image>
                                 <Image url="@Images/settingWall.png" />
                             </image>
                         </ImageView>
                         <Button alignment="CENTER" layoutX="110.0" layoutY="34.0" mnemonicParsing="false" onAction="#menuButtons" text="Hide Stats" textAlignment="CENTER" />
-                  <Button layoutX="113.0" layoutY="244.0" mnemonicParsing="false" onAction="#rankUp" text="Rank Up!" />
+                  <Button fx:id="rankUpButton" layoutX="113.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#rankUp" text="Rank Up!" />
                     <AnchorPane fx:id="upgradePane" layoutX="50.0" layoutY="299.0" pickOnBounds="true" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
                         <children>
                             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
@@ -327,6 +328,7 @@
                         </ImageView>
                         <Button alignment="CENTER" layoutX="97.0" layoutY="36.0" mnemonicParsing="false" onAction="#menuButtons" text="Hide Settings" textAlignment="CENTER" />
                     </children></AnchorPane>
+            <Button fx:id="harvestResultButton" onMouseClicked="#hideHarvestResult" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="589.0" text="Button" AnchorPane.leftAnchor="335.0" AnchorPane.rightAnchor="36.0" />
             </children>
         </AnchorPane>
     </center>
