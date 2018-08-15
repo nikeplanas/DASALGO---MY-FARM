@@ -8,10 +8,6 @@ public abstract class Item {
 
     }
 
-    public void displayInfo () {
-
-    }
-
     public String getDescription () {
         return description;
     }
