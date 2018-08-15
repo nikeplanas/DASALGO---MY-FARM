@@ -23,7 +23,7 @@ public class Farmer {
     private ArrayList<Seed> seeds;
 
     /** This constructor instantiates the farm which includes the field, the inventory of
-     *  tools and seeds, and the attributes of the player.
+     *  xctools and seeds, and the attributes of the player.
      *
      * @param name the name of the current player.
      * @throws IOException is thrown for reading the csv file containing the different seeds
