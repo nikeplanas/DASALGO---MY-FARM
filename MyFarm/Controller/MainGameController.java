@@ -448,7 +448,7 @@ public class MainGameController {
                 } else if (toolUsed.equals("Watering Can")) {
                     for (i = 0; i < 50; i++) {
                         t = farmer.getField().get(i);
-                        if (t.isObstructed() || !t.isPlowed() || (t.getSeed() != null && t.getWater() == t.getSeed().getWaterLimit()))
+                        if (!(t.getSeed() != null && t.getWater() <= t.getSeed().getWaterLimit()))
                             tiles.get(i).setDisable(true);
 
                     }
