@@ -5,7 +5,7 @@ public class Fertilizer extends Item {
     public Fertilizer () {
         amount = 0;
         this.setName("Fertilizer");
-        this.setDescription("Not actually a tool, but is bought in finite amounts and fertilizes a specific tile; Cannot be placed on a tile with a plant; Costs 10 OC; At the start of the game, the user originally has 5 units of fertilizer");
+        this.setDescription("Not actually a tool, but is bought in finite amounts and fertilizes a specific tile; Cannot be placed on a tile with a plant.");
     }
 
     public int getAmount() {
