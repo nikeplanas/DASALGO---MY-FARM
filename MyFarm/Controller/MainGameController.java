@@ -92,7 +92,6 @@ public class MainGameController {
         itemDescription.setText(t.getDescription());
         Thread thread = new Thread() {
             public void run () {
-                int i = 0;
                 boolean withered = false;
                 long extraSeconds = 0;
                 do {
@@ -110,10 +109,6 @@ public class MainGameController {
                             }
                         });
                     }
-                    if (i == 5) {
-                        t.setCurrentTime(t.getSeed().getHarvestTimeWithBonus() - 1);
-                    }
-                    i++;
                 } while ((t.getCurrentTime() < t.getSeed().getHarvestTimeWithBonus()));
                 if (t.harvestSuccess()) {
                     b.getStylesheets().clear();
@@ -191,7 +186,6 @@ public class MainGameController {
             }
         };
         thread.start();
-
     }
 
     public void clickTile (MouseEvent e) {
@@ -404,31 +398,6 @@ public class MainGameController {
 
     }
 
-    public void displayDescription (Item item) {
-        descBackground.setVisible(true);
-        descBox.setVisible(true);
-        descName.setText(item.getName());
-        itemDescription.setVisible(true);
-        itemDescription.setText(item.getDescription());
-    }
-
-    public void displayDescription (Tile tile) {
-        descBackground.setVisible(true);
-        descBox.setVisible(true);
-        descName.setText("Tile");
-        itemDescription.setVisible(true);
-        itemDescription.setText(tile.getDescription());
-    }
-
-    public void closeDescription () {
-        if (toolUsed == null) {
-            descBackground.setVisible(false);
-            descBox.setVisible(false);
-            selected = false;
-            hideDisplayItem();
-        }
-    }
-
     public void toolBuyVisibility (int index) {
         if (index < 3) {
             itemButton.setText("Use " + farmer.getTools().get(index).getName());
@@ -444,13 +413,6 @@ public class MainGameController {
                 buyB.setDisable(true);
             else
                 buyB.setDisable(false);
-        }
-    }
-
-    public void hideDisplayItem() {
-        if (!selected) {
-            itemButton.setVisible(false);
-            buyB.setVisible(false);
         }
     }
 
@@ -539,12 +501,6 @@ public class MainGameController {
         }
     }
 
-    public void disableAllTiles () {
-        for (int i = 0; i < 50; i++) {
-            tiles.get(i).setDisable(true);
-        }
-    }
-
     public void buy(MouseEvent e) {
         Button b = null;
         int i, index;
@@ -595,5 +551,43 @@ public class MainGameController {
 
     public void hideHarvestResult() {
         harvestResultButton.setVisible(false);
+    }
+
+    public void disableAllTiles () {
+        for (int i = 0; i < 50; i++) {
+            tiles.get(i).setDisable(true);
+        }
+    }
+
+    public void displayDescription (Item item) {
+        descBackground.setVisible(true);
+        descBox.setVisible(true);
+        descName.setText(item.getName());
+        itemDescription.setVisible(true);
+        itemDescription.setText(item.getDescription());
+    }
+
+    public void displayDescription (Tile tile) {
+        descBackground.setVisible(true);
+        descBox.setVisible(true);
+        descName.setText("Tile");
+        itemDescription.setVisible(true);
+        itemDescription.setText(tile.getDescription());
+    }
+
+    public void closeDescription () {
+        if (toolUsed == null) {
+            descBackground.setVisible(false);
+            descBox.setVisible(false);
+            selected = false;
+            hideDisplayItem();
+        }
+    }
+
+    public void hideDisplayItem() {
+        if (!selected) {
+            itemButton.setVisible(false);
+            buyB.setVisible(false);
+        }
     }
 }
