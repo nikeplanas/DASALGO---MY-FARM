@@ -24,4 +24,8 @@ public class Plow extends Item {
 	public void plowTile (Tile t) {
 		t.setPlowed();
 	}
+	
+	public void removeWithered (Tile t) {
+        	t.setCurrentTime((t.getSeed().getHarvestTimeWithBonus() * 3) + 60);
+    	}
 }
