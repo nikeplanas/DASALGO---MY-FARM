@@ -33,7 +33,7 @@ public class MainGameController {
     @FXML
     public VBox defaultButtons;
     @FXML
-    public AnchorPane seedMenu, settingsMenu, statsMenu, upgradePane;
+    public AnchorPane seedMenu, statsMenu, upgradePane;
 
     @FXML
     public Label name, coins, farmerLevel, farmerType;
@@ -291,9 +291,6 @@ public class MainGameController {
                 defaultButtons.setVisible(false);
                 statsMenu.setVisible(true);
                 rankUpButton.setDisable(!farmer.validUpgradeType());
-            } else if (b.getText().contentEquals("Settings")) {
-                defaultButtons.setVisible(false);
-                settingsMenu.setVisible(true);
             }
         } else {
             if (b.getParent() == seedMenu) {
@@ -302,9 +299,6 @@ public class MainGameController {
             } else if (b.getParent() == statsMenu) {
                 defaultButtons.setVisible(true);
                 statsMenu.setVisible(false);
-            } else if (b.getParent() == settingsMenu) {
-                defaultButtons.setVisible(true);
-                settingsMenu.setVisible(false);
             }
         }
     }
