@@ -12,6 +12,6 @@ public class Tree extends Seed {
 	 * This constructor instantiates Tree
 	 */
 	public Tree () {
-		Super();
+		super();
 	}
 }
