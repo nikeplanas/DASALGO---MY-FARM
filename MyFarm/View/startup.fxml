@@ -10,7 +10,6 @@
       <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="startButton" layoutX="356.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="27.0" prefWidth="249.0" text="Start" />
       <Button layoutX="356.0" layoutY="397.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="249.0" text="Options" />
-      <Button layoutX="356.0" layoutY="436.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="249.0" text="Quit" />
       <TextField fx:id="nameTextField" layoutX="356.0" layoutY="319.0" onKeyTyped="#checkValidName" prefHeight="27.0" prefWidth="249.0" promptText="Name (15 characters max)" />
    </children>
 </AnchorPane>
