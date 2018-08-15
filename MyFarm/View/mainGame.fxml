@@ -210,7 +210,6 @@
                <children>
                       <Button mnemonicParsing="false" onAction="#menuButtons" text="Inventory" textAlignment="CENTER" />
                    <Button mnemonicParsing="false" onAction="#menuButtons" text="Farmer Stats" textAlignment="CENTER" />
-                  <Button mnemonicParsing="false" onAction="#menuButtons" text="Settings" />
                </children>
             </VBox>
             <AnchorPane fx:id="seedMenu" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="0.0">
@@ -314,15 +313,6 @@
                            </children></VBox>
                      </children>
                   </AnchorPane>
-                    </children></AnchorPane>
-                <AnchorPane fx:id="settingsMenu" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="300.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="0.0">
-                    <children>
-                        <ImageView fitHeight="488.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                            <image>
-                                <Image url="@Images/settingWall.png" />
-                            </image>
-                        </ImageView>
-                        <Button alignment="CENTER" layoutX="97.0" layoutY="36.0" mnemonicParsing="false" onAction="#menuButtons" text="Hide Settings" textAlignment="CENTER" />
                     </children></AnchorPane>
             <Button fx:id="harvestResultButton" onMouseClicked="#hideHarvestResult" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="589.0" text="Button" AnchorPane.leftAnchor="335.0" AnchorPane.rightAnchor="36.0" />
             </children>
