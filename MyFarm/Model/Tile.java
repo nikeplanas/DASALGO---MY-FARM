@@ -55,18 +55,30 @@ public class Tile {
         return obstructed;
     }
 
+    /**
+    * This method gets the value of water
+    */
     public int getWater() {
         return water;
     }
 
+    /**
+    * This method gets the value of fertilizer
+    */
     public int getFertilizer() {
         return fertilizer;
     }
-
+    
+    /**
+    * This method is the getter for the tile number
+    */
     public int getTileNum() {
         return tileNum;
     }
 
+    /**
+    * This method sets the seed
+    */
     public Seed getSeed() {
         return seed;
     }
