@@ -1,5 +1,4 @@
-Package MyFarm.Model;
-
+package MyFarm.Model;
 
 /**	This class is a representation of the fruit model.
  *	@author Ma. Patricia Y. Villaroman
