@@ -12,6 +12,6 @@ public class Fruit {
 	* This constructor instantiates Fruit
 	*/
     public Fruit () {
-	Super();
+	super();
     }
 }
