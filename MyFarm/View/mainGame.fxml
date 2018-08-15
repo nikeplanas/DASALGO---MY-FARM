@@ -21,7 +21,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyFarm.Controller.MainGameController">
     <top>
-        <GridPane gridLinesVisible="true" maxHeight="192.0" minHeight="-Infinity" prefHeight="54.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+        <GridPane gridLinesVisible="false" maxHeight="192.0" minHeight="-Infinity" prefHeight="54.0" prefWidth="960.0" BorderPane.alignment="CENTER">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="192.0" prefWidth="192.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="234.0" prefWidth="234.0" />
@@ -33,9 +33,6 @@
             </rowConstraints>
             <children>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
-                    <children>
-                        <Button layoutX="67.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#clickTile" text="Help" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="10.0" />
-                    </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                     <children>
@@ -214,7 +211,6 @@
                       <Button mnemonicParsing="false" onAction="#menuButtons" text="Inventory" textAlignment="CENTER" />
                    <Button mnemonicParsing="false" onAction="#menuButtons" text="Farmer Stats" textAlignment="CENTER" />
                   <Button mnemonicParsing="false" onAction="#menuButtons" text="Settings" />
-                      <Button mnemonicParsing="false" onAction="#menuButtons" text="Exit Game" />
                </children>
             </VBox>
             <AnchorPane fx:id="seedMenu" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="0.0">
